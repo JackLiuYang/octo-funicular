@@ -3,8 +3,6 @@ server:
   tomcat:
     uri-encoding: UTF-8
 spring:
-  application:
-    name: client-base
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
