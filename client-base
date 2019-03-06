@@ -1,3 +1,7 @@
+server:
+  port: 8000
+  tomcat:
+    uri-encoding: UTF-8
 spring:
   application:
     name: client-base
