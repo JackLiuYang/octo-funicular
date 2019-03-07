@@ -1,1 +1,58 @@
-
+# tomcat端口
+server:
+  port: 8004
+  #port: 20007
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+  tomcat:
+    uri-encoding: UTF-8
+# spring 配置
+spring:
+# 配置返回时间戳
+  jackson:
+      serialization:
+        write-dates-as-timestamps: true
+  #zipkin:
+    #base-url: http://192.168.1.67:9411/
+  http:
+   encoding:
+     force: true
+     charset: UTF-8
+     enable: true
+  # 页面跳转
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+  aop: true
+  datasource:
+    url: jdbc:mysql://handongkeji.com/bq_mb_forum?autoReconnect=true&useUnicode=true&characterEncoding=utf8
+    username: root
+    password: Admin2015
+    driver-class-name: com.mysql.jdbc.Driver
+    filters: stat
+    maxActive: 800
+    initialSize: 5
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 'x' FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    maxOpenPreparedStatements: 10
+    removeAbandoned: true
+    removeAbandonedTimeout: 180
+    logAbandoned: true
+# mybatis mapper扫描设置
+mybatis:
+  mapper-locations: classpath:com/beiqi/mybatis/mapper/*.xml
+logging:
+  config: classpath:logback-spring.xml
+  level:
+      org.springframework.web: DEBUG,CONSOLE
