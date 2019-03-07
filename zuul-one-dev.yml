@@ -1,9 +1,4 @@
 
-
-server:
-  port: 8011
-# port: 20011
-
 eureka:
   client:
     register-with-eureka: true
@@ -73,12 +68,5 @@ ribbon:
 #         maxQueueSize: -1
 #   metrics:
 #     enabled: true
-
-
-
-
-
-
-
 
 
