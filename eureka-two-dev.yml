@@ -1,4 +1,6 @@
-
+server:
+  port: 8888
+# port: 20001  
 eureka:
   client:
     fetch-registry: true
