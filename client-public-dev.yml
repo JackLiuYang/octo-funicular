@@ -2,6 +2,9 @@ server:
   port: 8001
   tomcat:
     uri-encoding: UTF-8
+eureka:
+  instance:
+    prefer-ip-address: true    
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
