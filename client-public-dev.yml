@@ -1,6 +1,6 @@
-
 server:
   port: 8001
+# port: 20005  
   tomcat:
     uri-encoding: UTF-8
 spring:
