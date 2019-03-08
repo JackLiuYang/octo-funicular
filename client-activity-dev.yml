@@ -1,5 +1,4 @@
 
-# tomcat端口
 server:
   port: 8002
   #port: 20006
@@ -8,8 +7,6 @@ server:
     ConnectTimeout: 60000
   tomcat:
     uri-encoding: UTF-8
-
-# spring 配置
 spring:
 # 配置返回时间戳
   jackson:
@@ -54,8 +51,6 @@ spring:
     removeAbandoned: true
     removeAbandonedTimeout: 180
     logAbandoned: true
-
-# mybatis mapper扫描设置
 mybatis:
   mapper-locations: classpath:com/beiqi/mybatis/mapper/*.xml
 logging:
