@@ -28,9 +28,9 @@ spring:
       content-type: text/html
   aop: true
   datasource:
-    url: jdbc:mysql://handongkeji.com/bq_mb_forum?autoReconnect=true&useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://rm-2zefah8dycl0bn7464o.mysql.rds.aliyuncs.com/bq_mb_forum?autoReconnect=true&useUnicode=true&characterEncoding=utf8
     username: root
-    password: Admin2015
+    password: Simon_@1x-P
     driver-class-name: com.mysql.jdbc.Driver
     filters: stat
     maxActive: 800
