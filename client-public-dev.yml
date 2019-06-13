@@ -6,9 +6,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://handongkeji.com:3306/bq_public?setUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://rm-2zefah8dycl0bn7464o.mysql.rds.aliyuncs.com/bq_public?setUnicode=true&characterEncoding=utf8
     username: root
-    password: Admin2015
+    password: Simon_@1x-P
     tomcat:
       initial-size: 1
       min-idle: 1
