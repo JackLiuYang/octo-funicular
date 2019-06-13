@@ -1,0 +1,27 @@
+
+server:
+  port: 8016
+# port: 20000  
+eureka:
+  client:
+    fetch-registry: true
+    registry-fetch-interval-seconds: 5
+    register-with-eureka: false
+  server:
+    eviction-interval-timer-in-ms: 50000
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
