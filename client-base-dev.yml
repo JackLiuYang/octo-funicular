@@ -5,7 +5,7 @@ server:
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://39.96.6.123:3306/bq_mb_user?setUnicode=true&characterEncoding=utf8
     username: root
     password: Simon_@1x
